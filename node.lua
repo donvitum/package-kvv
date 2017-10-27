@@ -82,9 +82,9 @@ function node.render()
 
             if remaining < 5 then
                 colored:use{color = {dep.color_r, dep.color_g, dep.color_b, 1}}
-                white:draw(0,y, 100,y + 100)
+                white:draw(0,y, 100,y + 40)
                 colored:deactivate()
-                CONFIG.font:write(50 - #dep.symbol*18, y+16, dep.symbol, 70, 1,1,1,1)
+                CONFIG.font:write(50 - #dep.symbol*10, y, dep.symbol, 40, 1,1,1,1)
 
                 local alpha = math.max(-1, math.min(1, -3 + math.sin(sys.now()) * 5.5)) * 0.5 + 0.5
                 if #dep.more > 0 then
