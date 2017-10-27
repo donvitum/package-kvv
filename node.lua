@@ -1,4 +1,4 @@
-gl.setup(800, 480)
+gl.setup(1024, 768)
 
 util.init_hosted()
 
